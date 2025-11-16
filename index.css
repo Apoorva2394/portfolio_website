@@ -562,15 +562,31 @@ body:not(.user-is-tabbing) a:focus {
         flex-direction: column-reverse;
         align-items: initial;
     }
+
+   .about__photo-container {
+            display: flex;
+          justify-content: center;
+        }
 }
 
 .about__photo-container {
     margin-bottom: var(--gutter-normal);
 }
 
+.about__photo {
+    width: 75%;
+    height: 85%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 @media(min-width: 901px) {
     .about__text {
         flex: 0 0 35%;
+        
+    }
+
+    .about__photo{
         
     }
     

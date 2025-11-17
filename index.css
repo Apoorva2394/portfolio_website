@@ -32,7 +32,7 @@
     --line-height-small: 1.2;
 
     --black: #000;
-    --pink: #ff3258;
+    --pink: #D4D4D4;
     --white: #f0e9f2;
     --white-1: #e5e5e6da;
 
@@ -210,12 +210,12 @@ body:not(.user-is-tabbing) a:focus {
     color: var(--pink);
 }
 
-.btn {
+.btn{
     position: relative;
     display: inline-block;
     padding: 1rem 4.2rem;
     text-decoration: none;
-    color: inherit;
+    color: var(--black);
     border: 1px solid  var(--pink);
     font-weight: 400;
 }
@@ -223,8 +223,20 @@ body:not(.user-is-tabbing) a:focus {
 .btn:focus {
     outline: none;
 }
+.btn_mail{
+    color: var(--black);
+    position: relative;
+    display: inline-block;
+    padding: 1rem 4.2rem;
+    text-decoration: none;
+    background-color: var(--pink);
+    border: 1px solid  var(--pink);
+    font-weight: 400;
+}
+.btn_mail:hover{color:var(--pink);
+background-color: var(--black);}
 
-.btn::after {
+.btn::after{
     content: '';
     display: block;
     position: absolute;
@@ -237,10 +249,12 @@ body:not(.user-is-tabbing) a:focus {
     transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
+
 .btn:hover::after,
 .btn:focus::after {
     right: 0;
     background: var(--pink);
+    
 }
 
 .btn--pink {
@@ -255,7 +269,11 @@ body:not(.user-is-tabbing) a:focus {
 .btn--pink:hover,
 .btn--pink:focus {
     background: transparent;
+    color: var(--pink);
 }
+
+
+
 
 .link__text {
     position: relative;
@@ -305,7 +323,7 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
     height: 5.5rem;
     width: 5.5rem;
-    background-color: var(--pink);
+    background-color: #B0ADAE;
     border-radius: 50%;
     z-index: 10;
     visibility: hidden;
@@ -394,6 +412,20 @@ body:not(.user-is-tabbing) a:focus {
     right: 0;
     height: 2px;
     background: var(--pink);
+}
+
+.nav__logo {
+    margin-right: var(--gutter-medium);
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--white);
 }
 
 /* --------------------------------------- */

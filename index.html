@@ -16,30 +16,23 @@
 
   <!-- ***** Header ***** -->
 
-  <header class="header" role="banner" id="top">
-    <div class="row">
+  <header class="header " role="banner" id="top">
+    <div class="row ">
       <nav class="nav" role="navigation">
-        <div class="nav__logo">
+        <div class="nav__logo ">
           <img src="./images/port_logo.jpg" alt="Logo">
         </div>
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
+        <ul class="nav__items reveal">
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
     </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
-          <span>Apoorva Gupta</span>
-        </h1>
-        <!-- Put a small paragraph about yourself -->
+
+    <div class="header__text-box row ">
+      <div class="header__text ">
+        <h1 class="heading-primary"><span>Apoorva Gupta</span></h1>
         <p>Aspiring developer passionate about technology, creativity, and innovation.</p>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
@@ -47,68 +40,87 @@
   </header>
 
   <main role="main">
-     <!-- ***** About ***** -->
 
-     <section class="about" id="about">
-      <div class="row">
+    <!-- ***** About Section ***** -->
+
+    <section class="about reveal" id="about">
+      <div class="row reveal">
         <h2>About Me</h2>
         <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
+          <div class="about__text reveal">
             <p>
               Hi, I’m a passionate and motivated BCA student with a strong interest in web development and cloud technologies. I enjoy turning ideas into functional and user-friendly digital experiences. I’ve gained hands-on experience through internships and projects, where I learned to combine design thinking with technical problem-solving.
             </p>
             <a href="./apoorvaresume bca.pdf" class="btn_mail">My Resume</a>
           </div>
 
-          <div class="about__photo-container">
-            
+          <div class="about__photo-container reveal">
             <img class="about__photo" src="./images/IMG-20241120-WA0045(1).jpg" alt="" />
           </div>
         </div>
       </div>
     </section>
-    <!-- ***** Work ***** -->
 
-    <section class="work" id="work">
-      <div class="row">
+    <!-- ***** Work Section ***** -->
+
+    <section class="work reveal" id="work">
+      <div class="row reveal">
         <h2>My Work</h2>
+
         <div class="work__boxes">
 
-          <!-- Each div with the work__box class is a project. -->
+          <!-- Project 1 -->
+          <div class="work__box reveal">
+            <div class="work__text reveal">
+              <h3>Snake Game</h3>
+              <p>A Snake game developed using JavaScript.</p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
 
-          <div class="work__box">
-            <div class="work__text">
+              <div class="work__links">
+                <a href="https://github.com/Apoorva2394/snake_game_using_javascript" class="link__text">Visit Site <span>&rarr;</span></a>
+                <a href="https://apoorva2394.github.io/snake_game_using_javascript/"><img src="./images/github.svg" class="work__code" alt="GitHub"></a>
+              </div>
+            </div>
+
+            <div class="work__image-box reveal">
+              <img src="./images/snake.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="work__box reveal">
+            <div class="work__text reveal">
               <h3>Website Template</h3>
-              <p>
-                A simple website template built using HTML, SCSS, JavaScript.
-              </p>
+              <p>A simple Responsive website template built using HTML, SCSS, JavaScript.</p>
               <ul class="work__list">
                 <li>HTML</li>
                 <li>SCSS</li>
                 <li>JavaScript</li>
-              
               </ul>
 
               <div class="work__links">
-                <a href="https://apoorva2394.github.io/responsive_01_cohort/" target="_blank" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://github.com/Apoorva2394/responsive_01_cohort" title="View Source Code" target="_blank">
+                <a href="https://apoorva2394.github.io/responsive_01_cohort/" target="_blank" class="link__text">Visit Site <span>&rarr;</span></a>
+                <a href="https://github.com/Apoorva2394/responsive_01_cohort" target="_blank">
                   <img src="./images/github.svg" class="work__code" alt="GitHub">
                 </a>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/Screenshot 2025-11-11 at 7.53.01 PM.png" class="work__image" alt="Project 1" />
+
+            <div class="work__image-box reveal">
+              <img src="./images/p1.png" class="work__image" alt="Project 1" />
             </div>
           </div>
 
-          <div class="work__box">
-            <div class="work__text">
+          <!-- Project 3 -->
+          <div class="work__box reveal">
+            <div class="work__text reveal">
               <h3>RAG Application</h3>
               <p>
-                A smart RAG-powered fitness and diet app that delivers personalized workout and nutrition recommendations using real-time given data and AI-driven insights.
+                A smart RAG-powered fitness and diet app that delivers personalized workout and nutrition recommendations using real-time data and AI-driven insights.
               </p>
               <ul class="work__list">
                 <li>Python</li>
@@ -118,96 +130,55 @@
               </ul>
 
               <div class="work__links">
-                <a href="#" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="#">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
+                <a href="#" class="link__text">Visit Site <span>&rarr;</span></a>
+                <a href="#"><img src="./images/github.svg" class="work__code" alt="GitHub"></a>
               </div>
             </div>
-            <div class="work__image-box">
-              <img src="./images/Screenshot 2025-11-11 at 8.15.31 PM.png" class="work__image" alt="Project 1" />
+
+            <div class="work__image-box reveal">
+              <img src="./images/p2.png" class="work__image" alt="Project 2" />
             </div>
           </div>
+        
+          
 
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Snake Game</h3>
-              <p>
-                 A Snake game developed using javascript.
-              </p>
-              <ul class="work__list">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JAVASCRIPT</li>
-              </ul>
-
-              <div class="work__links">
-                <a href="https://github.com/Apoorva2394/snake_game_using_javascript" class="link__text">
-                  Visit Site <span>&rarr;</span>
-                </a>
-                <a href="https://apoorva2394.github.io/snake_game_using_javascript/">
-                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
-                </a>
-              </div>
-            </div>
-            <div class="work__image-box">
-              <img src="./images/snake.png" class="work__image" alt="Project 3" />
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-   
   </main>
 
-  <!-- ***** Contact ***** -->
+  <!-- ***** Contact Section ***** -->
 
-  <section class="contact" id="contact">
-    <div class="row">
+  <section class="contact reveal" id="contact">
+    <div class="row reveal">
       <h2>Get in Touch</h2>
-      <div class="contact__info">
+      <div class="contact__info reveal">
         <p>
-          Are you looking for a fast-performing and user-friendly website to
-          represent your product or business? or looking for any kind of
-          consultation? or want to ask questions? or have some advice for me
-          or just want to say "Hi 👋" in any case feel free to Let me know. I
-          will do my best to respond back. 😊 The quickest way to reach out to
-          me is via an email.
+          Are you looking for a fast-performing and user-friendly website… Let me know!
         </p>
-        <!-- Replace the email with yours -->
-        <a href="apoorvag861@gmail.com" class="btn_mail ">apoorvag861@gmail.com</a>
+        <a href="apoorvag861@gmail.com" class="btn_mail">apoorvag861@gmail.com</a>
       </div>
     </div>
   </section>
 
   <!-- ***** Footer ***** -->
 
-  <footer role="contentinfo" class="footer">
-    <div class="row">
-      <!-- Update the links to point to your accounts -->
-      <ul class="footer__social-links">
-        <li class="footer__social-link-item">
-          <a href="https://github.com/apoorva2394/" title="Link to Github Profile">
-            <img src="./images/github.svg" class="footer__social-image" alt="Github">
-          </a>
-        </li>
-        <li class="footer__social-link-item">
-          <a href="https://www.linkedin.com/in/apoorva2394/">
-            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
-          </a>
-        </li>
+  <footer role="contentinfo" class="footer reveal">
+    <div class="row reveal">
+      <ul class="footer__social-links reveal">
+        <li><a href="https://github.com/apoorva2394/"><img src="./images/github.svg" class="footer__social-image"></a></li>
+        <li><a href="https://www.linkedin.com/in/apoorva2394/"><img src="./images/linkedin.svg" class="footer__social-image"></a></li>
       </ul>
     </div>
   </footer>
 
   <div class="cursor"></div>
-  <a href="#top" class="back-to-top" title="Back to Top">
+
+  <a href="#top" class="back-to-top reveal" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
   </a>
+
   <script src="./index.js"></script>
 </body>
-
 </html>

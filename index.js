@@ -42,7 +42,7 @@ window.addEventListener("scroll", () => {
 
 
 const cursor = document.querySelector('.cursor');
-const header = document.querySelector('.header');
+const header = document.querySelector('body');
 
 document.addEventListener('mousemove', (e) => {
     cursor.style.left = e.clientX - 10 + 'px'; 

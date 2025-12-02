@@ -448,7 +448,11 @@ background-color: var(--black);}
 .header:hover .cursor {
     opacity: 1;
 }
-
+@media(max-width: 900px) {
+    .cursor {
+        display: none;
+    }
+}
 /* --------------------------------------- */
 /* ----- Header ----- */
 /* --------------------------------------- */
@@ -615,13 +619,8 @@ background-color: var(--black);}
 @media(min-width: 901px) {
     .about__text {
         flex: 0 0 35%;
-        
     }
 
-    .about__photo{
-        
-    }
-    
     .about__photo-container {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
